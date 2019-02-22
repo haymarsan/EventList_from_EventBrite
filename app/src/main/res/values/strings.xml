@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Event List from EventBrite</string>
+    <string name="action_settings">Settings</string>
+    <string name="category_title">Popular in Washington</string>
+    <string name="feature_title">Wine and Slow Jams</string>
+    <string name="feature_status1">Champagne and Wine Bottles</string>
+    <string name="feature_status2">on Eventbrite</string>
+    <string name="followUp_event1_lb1">2019 Carnegie International \nNuclear Policy Conference</string>
+    <string name="followUp_event1_lb2">Mon, Mar 11 - Tue, Mar 12 - 7:00 AM EDT</string>
+    <string name="followUp_event1_lb3">Ronald Reagan Building and International</string>
+    <string name="followUp_event2_lb1">Alan Walker w/Sam Feldt</string>
+    <string name="followUp_event2_lb2">Fri, Mar 22 - 9:00 PM EDT</string>
+    <string name="followUp_event2_lb3">Echostage</string>
+    <string name="followUp_event3_lb1">CAYA 10th \nAnniversary Celebration </string>
+    <string name="followUp_event3_lb2">Sat, Mar 23 - 8:00 PM EDT</string>
+    <string name="followUp_event3_lb3">The Anthem</string>
+    <string name="seeMore">See more events like this</string>
+    <string name="title2"><u><b>New York</b></u></string>
+
+</resources>

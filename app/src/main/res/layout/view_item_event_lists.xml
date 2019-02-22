@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_medium_2"
+    android:paddingRight="@dimen/margin_medium_2"
+    android:paddingBottom="@dimen/margin_medium_2">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_title"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_feature_event"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_category_title"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:cardCornerRadius="@dimen/margin_medium"
+            app:cardElevation="-4dp">
+
+            <ImageView
+                android:id="@+id/iv_feature_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wine_n_slow" />
+
+        </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_feature_event"
+            android:layout_marginTop="-20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_feature_event"
+                    android:layout_marginLeft="170dp"
+                    android:clickable="true"
+                    android:foreground="@drawable/bg_ripple"
+                    android:background="@drawable/circle_frame2"
+                    android:backgroundTint="@color/colorWhite"
+                    android:src="@drawable/ic_share_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/iv_favourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_feature_event"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_toRightOf="@id/iv_share"
+                    android:clickable="true"
+                    android:foreground="@drawable/bg_ripple"
+                    android:background="@drawable/circle_frame2"
+                    android:backgroundTint="@color/colorWhite"
+                    android:forceHasOverlappingRendering="true"
+                    android:src="@drawable/ic_favorite_border_black_24dp" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_view1">
+
+        <TextView
+            android:id="@+id/lb_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:text="FEB"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/lb_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_month"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:text=" 22"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_feature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_toRightOf="@id/lb_month"
+            android:text="@string/feature_title"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_feature_status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_feature_title"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_toRightOf="@id/lb_month"
+            android:text="@string/feature_status1"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+        <TextView
+            android:id="@+id/tv_feature_status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_feature_status1"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_toRightOf="@id/lb_month"
+            android:text="@string/feature_status2"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_followUp_event1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_feature_status2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            app:cardCornerRadius="@dimen/margin_small"
+            app:cardElevation="@dimen/margin_small">
+
+
+            <ImageView
+                android:id="@+id/iv_followUp_event1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nuclear_conference" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_followUp_event1_lb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_feature_status2"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_toRightOf="@id/cv_followUp_event1"
+            android:text="@string/followUp_event1_lb1"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_followUp_event1_lb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event1_lb1"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toRightOf="@id/cv_followUp_event1"
+            android:text="@string/followUp_event1_lb2"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+        <TextView
+            android:id="@+id/tv_followUp_event1_lb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event1_lb2"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toRightOf="@id/cv_followUp_event1"
+            android:text="@string/followUp_event1_lb3"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+
+        <ImageView
+            android:id="@+id/iv_favourite1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event1_lb2"
+            android:layout_marginLeft="14dp"
+            android:clickable="true"
+            android:foreground="@drawable/bg_ripple"
+            android:layout_toRightOf="@id/tv_followUp_event1_lb3"
+            android:backgroundTint="@color/colorWhite"
+            android:forceHasOverlappingRendering="true"
+            android:src="@drawable/ic_favorite_border_black_24dp" />
+
+
+        <!--   -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_followUp_event2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/cv_followUp_event1"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            app:cardCornerRadius="@dimen/margin_small"
+            app:cardElevation="@dimen/margin_small">
+
+
+            <ImageView
+                android:id="@+id/iv_followUp_event2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alan_walker" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_followUp_event2_lb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event1_lb3"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_toRightOf="@id/cv_followUp_event1"
+            android:text="@string/followUp_event2_lb1"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_followUp_event2_lb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event2_lb1"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toRightOf="@id/cv_followUp_event2"
+            android:text="@string/followUp_event2_lb2"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+        <TextView
+            android:id="@+id/tv_followUp_event2_lb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event2_lb2"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toRightOf="@id/cv_followUp_event2"
+            android:text="@string/followUp_event2_lb3"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+
+        <ImageView
+            android:id="@+id/iv_favourite2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event2_lb2"
+            android:layout_marginLeft="165dp"
+            android:clickable="true"
+            android:foreground="@drawable/bg_ripple"
+            android:layout_toRightOf="@id/tv_followUp_event2_lb3"
+            android:backgroundTint="@color/colorWhite"
+            android:forceHasOverlappingRendering="true"
+            android:src="@drawable/ic_favorite_border_black_24dp" />
+
+
+        <!--   -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_followUp_event3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/cv_followUp_event2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            app:cardCornerRadius="@dimen/margin_small"
+            app:cardElevation="@dimen/margin_small">
+
+
+            <ImageView
+                android:id="@+id/iv_followUp_event3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/anthem_caya_anni" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_followUp_event3_lb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event2_lb3"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_toRightOf="@id/cv_followUp_event2"
+            android:text="@string/followUp_event3_lb1"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_followUp_event3_lb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event3_lb1"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toRightOf="@id/cv_followUp_event3"
+            android:text="@string/followUp_event3_lb2"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+        <TextView
+            android:id="@+id/tv_followUp_event3_lb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event3_lb2"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toRightOf="@id/cv_followUp_event3"
+            android:text="@string/followUp_event3_lb3"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smaller" />
+
+
+        <ImageView
+            android:id="@+id/iv_favourite3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_followUp_event3_lb2"
+            android:layout_marginLeft="155dp"
+            android:clickable="true"
+            android:foreground="@drawable/bg_ripple"
+            android:layout_toRightOf="@id/tv_followUp_event3_lb3"
+            android:backgroundTint="@color/colorWhite"
+            android:forceHasOverlappingRendering="true"
+            android:src="@drawable/ic_favorite_border_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_seeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_followUp_event3"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/seeMore"
+            android:textAlignment="center" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_seeMore"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="#000000" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

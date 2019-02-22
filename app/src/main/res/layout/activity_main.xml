@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <View
+                android:id="@+id/round_whatgoodin"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginLeft="-130dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="-65dp"
+                android:background="@drawable/round_shape"
+                android:fitsSystemWindows="true" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="What's good in"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_regular_2x" />
+
+
+            <ImageView
+                android:id="@+id/iv_liberty"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_title"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:src="@drawable/ic_filter_vintage_black_24dp"
+                android:background="@drawable/circle_frame3"/>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="@string/title2"
+                android:layout_below="@id/tv_title"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_title2"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_toRightOf="@id/iv_liberty"
+                android:background="#FFFFFF" />
+
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_lists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.design.widget.CoordinatorLayout>
